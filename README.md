@@ -10,7 +10,7 @@
  - ![Icone Angular](https://i.imgur.com/0YNddXe.png) Angular
  - ![Icone Spring Boot](https://i.imgur.com/vHgAc8x.png) Spring Boot
  
- ### Futuras Implementações(Versão Atual 1.0):
+ ### Futuras Implementações (Versão Atual 1.0):
    - Fazer upload de imagem direto do computador.
    - Conseguir colocar mais de uma imagem para o carro.
    - Criar um chat interno para que os compradores e vendedores se comuniquem.
