@@ -10,8 +10,17 @@
  - ![Icone Angular](https://i.imgur.com/0YNddXe.png) Angular
  - ![Icone Spring Boot](https://i.imgur.com/vHgAc8x.png) Spring Boot
  
- ### Futuras Implementações:
-   - Fazer upload de imagem direto do computador
-   - Criar um chat interno para que os compradores e vendedores se comuniquem
+ ### Futuras Implementações(Versão Atual 1.0):
+   - Fazer upload de imagem direto do computador.
+   - Conseguir colocar mais de uma imagem para o carro.
+   - Criar um chat interno para que os compradores e vendedores se comuniquem.
    - Quando alguem estiver interessado no carro e enviar uma mensagem ir direto para o vendedor do carro para seu e-mail.
+   - Quando alguem entrar em contato com a empresa MinhaNaveNova chegar no e-mail.
+   - Adicionar mais dados referente ao carro cadastrado.
+   
+  ### Repositórios referente ao projeto:
+    - Back-end / Modelagem do Banco de Dados: https://github.com/bpcavalcante/minhanavenova
+    - Front-end: https://github.com/bpcavalcante/MinhaNaveNovaFrontEnd
+   
+   
    
