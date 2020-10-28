@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Veiculo } from '../model/Veiculo';
+import { PostagemService } from '../service/postagem.service';
 
 @Component({
   selector: 'app-perfil',
@@ -7,9 +9,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PerfilComponent implements OnInit {
 
-  constructor() { }
+  veiculo: Veiculo = new Veiculo()
+  listaVeiculos: Veiculo[]
 
-  ngOnInit(): void {
+  constructor(
+    private postagemService: PostagemService
+  ) { }
+
+  ngOnInit(){
+    this.findAllVeiculos()
+  }
+
+  findAllVeiculos(){
+    this.postagemService.getAllVeiculos().subscribe((resp: Veiculo[]) => {
+      this.listaVeiculos = resp
+    })
   }
 
 }

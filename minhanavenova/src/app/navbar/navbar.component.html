@@ -1,1 +1,186 @@
-<p>navbar works!</p>
+<nav class="navbar navbar-expand-lg navbar-light bground">
+    <a class="navbar-brand" href="index.html"><img class="logo" src="../../assets/img/mnn-branco.png" alt="Logo"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link text-light fonte p-3" routerLink="/home">Home <span
+                        class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light fonte p-3" routerLink="/noticias">Noticias</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light fonte p-3" routerLink="/contato">Contato</a>
+            </li>
+
+            <!-- Quando eu coloco ele sai do modal mas continua por isso trava como posso resolver?-->
+            <div *ngIf='auth.btnLogin()'>
+                <li class="nav-item">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#staticBackdrop">
+                        <img src="../../assets/img/Login.png" alt="Icone Login">
+                        <h6 class="text-light fonte">Entrar</h6>
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false"
+                        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content" style="background-color: #CFCFCF;">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="staticBackdropLabel">Logar</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div>
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">E-mail</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                                aria-describedby="emailHelp" [(ngModel)]="usuarioLogin.usuario">
+                                            <small id="emailHelp" class="form-text text-muted">Entre com o e-mail
+                                                cadastrado
+                                                para realizar o login</small>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputPassword1">Senha</label>
+                                            <input type="password" class="form-control" id="exampleInputPassword1"
+                                                [(ngModel)]="usuarioLogin.senha">
+                                        </div>
+                                    </div>
+
+                                    <!--Modal 2-->
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-danger d-flex justify-content-center"
+                                        data-toggle="modal" data-target="#teste">
+                                        Cadastrar-se
+                                    </button>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade mb-5" id="teste" data-backdrop="static" data-keyboard="false"
+                                        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content" style="background-color: #CFCFCF;">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="staticBackdropLabel">Cadastrar-se</h5>
+                                                    <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="form-group">
+                                                        <label for="nome">Nome</label>
+                                                        <input type="text" class="form-control" id="nome"
+                                                            style="width: 100%;" [(ngModel)]='user.nome'>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="email">E-mail</label>
+                                                        <input type="email" class="form-control" id="email"
+                                                            placeholder="nome@exemplo.com" [(ngModel)]='user.usuario'>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="senha">Senha</label>
+                                                        <input type="password" class="form-control" id="senha"
+                                                            placeholder="Digite sua senha"
+                                                            (input)='conferirSenha($event)' value="{{senha}}">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="senhaConf">Confirmar Senha</label>
+                                                        <input type="password" class="form-control" id="senhaConf"
+                                                            placeholder="Digite a confirmação de senha"
+                                                            [(ngModel)]='user.senha'>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-danger"
+                                                        data-dismiss="modal">Fechar</button>
+                                                    <button type="button" class="btn btn-success" (click)='cadastrar()'
+                                                        data-dismiss="modal">Cadastrar </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!--Modal 3-->
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-danger d-flex justify-content-center mt-3"
+                                        data-toggle="modal" data-target="#modalteste">
+                                        Esqueci minha senha
+                                    </button>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="modalteste" data-backdrop="static" data-keyboard="false"
+                                        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                        <div class="modal-dialog" style="background-color: #CFCFCF ;">
+                                            <div class="modal-content" style="background-color: #CFCFCF;;">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="staticBackdropLabel">Esqueci minha senha
+                                                    </h5>
+                                                    <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="form-group">
+                                                        <label for="emailRecuperar">E-mail</label>
+                                                        <input type="email" class="form-control" id="emailRecuperar"
+                                                            aria-describedby="emailHelp">
+                                                        <small id="emailHelp" class="form-text text-muted">Entre com o
+                                                            e-mail cadastrado
+                                                            para recuperar sua conta</small>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-danger"
+                                                        data-dismiss="modal">Fechar</button>
+                                                    <button type="button" class="btn btn-success">Recuperar
+                                                        Senha</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+                                    <button type="button" class="btn btn-success" (click)='entrar()'
+                                        data-dismiss="modal">Entrar</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </li>
+            </div>
+
+            <div *ngIf='auth.btnSair()'>
+                <li class="nav-item ">
+                    <a class="nav-link text-light fonte p-3" routerLink="/carros">Cadastrar Carro</a>
+                </li>
+            </div>
+
+            <div *ngIf='auth.btnSair()'>
+                <li class="nav-item ">
+                    <a class="nav-link text-light fonte p-3" routerLink = "/perfil">
+                        <img src="../../assets/img/user.png" alt="Icone User">
+                    </a>
+                </li>
+            </div>
+
+            <div *ngIf='auth.btnSair()'>
+                <li class="nav-item ">
+                    <a class="nav-link text-light fonte p-3" (click)='sair()'>Sair</a>
+                </li>
+            </div>
+
+        </ul>
+    </div>
+</nav>

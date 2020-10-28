@@ -1,0 +1,24 @@
+#form-contact {
+    background-color: #efefef;
+    border-radius: 5px;
+    padding: 20px 15px;
+    border: 1px solid #d4d4d4;
+    margin: 5px 0 80px;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.invalid-feedback {
+    display: none;
+    width: 100%;
+    margin-top: .25rem;
+    font-size: 80%;
+    color: #dc3545;
+}
+
+.teste{
+    margin-right: 10px;
+}
+

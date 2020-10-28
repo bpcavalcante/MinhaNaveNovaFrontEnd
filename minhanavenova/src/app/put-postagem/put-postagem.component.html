@@ -1,1 +1,39 @@
-<p>put-postagem works!</p>
+<div class="container mt-5 mb-5">
+    <h2 class="mt-5" style="text-align: center;">Editar seu veículo</h2>
+            <div>
+                <div class="form-row mt-3">
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" placeholder="Modelo" [(ngModel)] = 'veiculo.modelo'>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" placeholder="KM" [(ngModel)] = 'veiculo.km'>
+                    </div>
+                   
+                </div>
+                <div class="form-row mt-3">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Ano Fabricante" [(ngModel)] = 'veiculo.anofabricante'>
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Ano Modelo" [(ngModel)] = 'veiculo.anomodelo'>
+                    </div>
+                </div>
+                <div class="form-row mt-3">
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" placeholder="Valor" [(ngModel)] = 'veiculo.valor'>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" placeholder="Descrição" [(ngModel)] = 'veiculo.descricao'> 
+                    </div>
+                </div>
+                <div class="form-row mt-3">
+                    <div class="col-md-12">
+                        <input type="text" class="form-control" placeholder="Foto do Veiculo" [(ngModel)] = 'veiculo.foto'> 
+                    </div>
+                </div>
+            
+                <div class="form-row mt-3 mb-5 d-flex justify-content-center">
+                    <button type="button" class="btn btn-outline-danger w-50" (click)="salvar()">Salvar</button>
+                </div>
+            </div>
+</div>

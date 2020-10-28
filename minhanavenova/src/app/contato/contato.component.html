@@ -1,1 +1,80 @@
-<p>contato works!</p>
+<div style="background-color: #F3F5F8;">
+    <div class="container">
+        <h3 class="">Contato</h3>
+        <hr>
+        <p>Entre em contato com o MinhaNaveNova, enviando suas dúvidas ou sugestões. Sua mensagem é muito importante
+            para
+            nós!
+            Preencha os dados para ser atendido.</p>
+        <div class="row">
+            <div class="col-md-6">
+                <form id="form-contact">
+                    <div class="form-group">
+                        <label for="name">Nome</label>
+                        <input type="text" class="form-control" id="name" value required>
+                        <div class="invalid-feedback">Preencha seu nome</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" value required>
+                        <div class="invalid-feedback">Preencha seu email</div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-6">
+                            <label for="uf">Estado</label>
+                            <select class="form-control" id="uf" required>
+                                <option value selected>Selecione</option>
+                                <option value="SP">São Paulo</option>
+                                <option value="RJ">Rio de Janeiro</option>
+                                <option value="MG">Minas Gerais</option>
+                                <option value="BH">Belo Horizonte</option>
+                                <option value="AC">Acre</option>
+                                <option value="AL">Alagoas</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-6">
+                            <label for="cidade">Cidade</label>
+                            <select class="form-control" id="cidade" required>
+                                <option value selected>Selecione</option>
+                                <option value="BH">Belo Horizonte</option>
+                                <option value="SP">São Paulo</option>
+                                <option value="RJ">Rio de Janeiro</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea class="form-control" id="msg" rows="5" required>
+                    </textarea>
+                    </div>
+                    <div class="d-flex justify-content-end">
+                        <button type="submit" class="btn btn-danger d-flex justify-content-end">Enviar</button>
+                    </div>
+
+                </form>
+            </div>
+            <div class="col-md-6">
+                <div class="row p-2">
+                    <div class="col-md-6">
+                        <img src="../../assets/img/telefone.png" alt="Icone telefone" width="25px"> (11)98660-8101
+                    </div>
+                    <div class="col-md-6">
+                        <img src="../../assets/img/telefone.png" alt="Icone telefone" width="25px"> (11)98660-8101
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12" style="padding-left: 27px;">
+                        <img src="../../assets/img/email.png" alt="Icone E-mail"
+                            width="25px">contato@minhanavenova.com.br
+                    </div>
+                </div>
+
+
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.8927417284085!2d-46.56253658554374!3d-23.536359866553383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5fdcd8db398f%3A0x97014393e4ef19b8!2sUniversidade%20Cidade%20de%20S%C3%A3o%20Paulo%20-%20UNICID!5e0!3m2!1spt-BR!2sbr!4v1601493953217!5m2!1spt-BR!2sbr"
+                    width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0"></iframe>
+            </div>
+        </div>
+    </div>
+</div>
