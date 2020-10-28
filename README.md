@@ -3,7 +3,7 @@
 #### MinhaNaveNova é um projeto para que todos consigam vender seu próprio carro e comprar. Interagindo diretamente com o comprador ou vendedor.
 
 ### Pré-visualização do projeto::
- 
+ ![Telas](https://i.picasion.com/pic90/5b3346a7574eb8d9623267443abf66e4.gif) 
  
  - Video da apresentação do projeto - https://www.youtube.com/watch?v=6cKDJIjeQkE
 
