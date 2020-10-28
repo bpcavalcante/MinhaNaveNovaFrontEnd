@@ -16,7 +16,7 @@
    - Criar um chat interno para que os compradores e vendedores se comuniquem.
    - Quando alguem estiver interessado no carro e enviar uma mensagem ir direto para o vendedor do carro para seu e-mail.
    - Quando alguem entrar em contato com a empresa MinhaNaveNova chegar no e-mail.
-   - Adicionar mais dados referente ao carro cadastrado.
+   - Adicionar mais dados referente ao carro cadastrado, para que as informações fiquem mais consistente.
    
   ### Repositórios referente ao projeto:
    - Back-end / Modelagem do Banco de Dados: https://github.com/bpcavalcante/minhanavenova
