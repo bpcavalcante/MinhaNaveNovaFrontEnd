@@ -5,7 +5,13 @@
 
 ### Tecnologias Utilizadas:
  - ![Icone HTML5](https://i.imgur.com/1uU0UOw.png) HTML5
- - ![Icone HTML5](https://i.imgur.com/UHlZDyc.png) CSS3
- - ![Icone HTML5](https://i.imgur.com/zWZX5r6.png) Bootstrap
- - ![Icone HTML5](https://i.imgur.com/0YNddXe.png) Angular
- - ![Icone HTML5](https://i.imgur.com/vHgAc8x.png) Spring Boot
+ - ![Icone CS33](https://i.imgur.com/UHlZDyc.png) CSS3
+ - ![Icone Bootstrap](https://i.imgur.com/zWZX5r6.png) Bootstrap
+ - ![Icone Angular](https://i.imgur.com/0YNddXe.png) Angular
+ - ![Icone Spring Boot](https://i.imgur.com/vHgAc8x.png) Spring Boot
+ 
+ ### Futuras Implementações:
+   - Fazer upload de imagem direto do computador
+   - Criar um chat interno para que os compradores e vendedores se comuniquem
+   - Quando alguem estiver interessado no carro e enviar uma mensagem ir direto para o vendedor do carro para seu e-mail.
+   
