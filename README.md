@@ -19,8 +19,8 @@
    - Adicionar mais dados referente ao carro cadastrado.
    
   ### Repositórios referente ao projeto:
-    - Back-end / Modelagem do Banco de Dados: https://github.com/bpcavalcante/minhanavenova
-    - Front-end: https://github.com/bpcavalcante/MinhaNaveNovaFrontEnd
+   - Back-end / Modelagem do Banco de Dados: https://github.com/bpcavalcante/minhanavenova
+   - Front-end: https://github.com/bpcavalcante/MinhaNaveNovaFrontEnd
    
    
    
